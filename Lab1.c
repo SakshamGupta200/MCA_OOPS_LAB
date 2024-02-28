@@ -76,28 +76,27 @@ int main(){
 }
 
 
-/* Online C Compiler and Editor */
 #include <stdio.h>
 
 int main(){
     
-        int i,a[10],max,j;
+        int i,a[10],j;
     printf("Enter 10 numbers :");
     
   for(i=0; i<10; i++){
       printf("Enter %d element :",i );
       scanf("%d",&a[i]);
   }
-printf("Enter the elemrnt index to delete :", j);
+printf("Enter the elemrnt index to delete :");
 scanf("%d",&j);
 
 for(i = 0; i<10; i++){
- if(a[i] == a[j]){
+
      for (i = j-1; i<10; i++){
          a[i] = a[i+1];
      }
- }    
-}
+   
+
 for (i=0;i<9;i++){
     printf(a[i]);
 }
