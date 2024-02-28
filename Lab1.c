@@ -50,3 +50,27 @@ int main(){
     
     
 }
+
+
+int main(){
+    
+        int i,a[10],max;
+    printf("Enter 10 numbers :");
+    
+  for(i=0; i<10; i++){
+      printf("Enter %d element :",i );
+      scanf("%d",&a[i]);
+  }
+  max = a[0];
+  printf("*************** Max Number ********************");
+    for(i=2; i<10; i++){
+        if(max < a[i]){
+            max = a[i];
+        }
+        
+    }
+    printf("Max = %d", max);
+    return 0 ;
+    
+    
+}
